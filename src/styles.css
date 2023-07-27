@@ -1,4 +1,14 @@
 /* Desktop-first */
+
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 @font-face {
   font-family: 'CircularStd';
   src: url(../src/fonts/CircularStd-Medium.woff) format('woff');
@@ -43,9 +53,9 @@
   margin: 0 7.5em;
 }
 
-.active {
+/* .active {
   visibility: visible;
-}
+} */
 
 nav {
   display: flex;
@@ -55,15 +65,24 @@ nav {
 }
 
 .nav-menu {
-  visibility: visible;
+  /* visibility: visible; */
+  display: block;
   position: inherit;
-  /* border: 1px dotted red; */
+}
+
+.nav-menu {
+  /* visibility: visible; */
+  position: inherit;
+}
+
+.nav-menu.active {
+  display: block;
 }
 
 .nav-menu-toggle {
   position: absolute;
   right: 2em;
-  top: 2.5em;
+  top: 2.85em;
   cursor: pointer;
   visibility: hidden;
 }
@@ -85,7 +104,9 @@ nav {
   left: 0;
 }
 
-.nav-links > a {
+.nav-links a {
+
+  display: block;
   font-family: var(--font-medium);
   color: var(--primary);
   font-size: 18px;
@@ -93,7 +114,6 @@ nav {
   line-height: 18px;
   letter-spacing: -0.18px;
   text-decoration: none;
-  /* margin-right: 40px; */
   text-transform: capitalize;
 }
 
@@ -129,47 +149,98 @@ nav {
   font-weight: 700;
 }
 
-/* @media (min-width: 401px) and (max-width: 768px) {
+/* Tablet */
+@media (min-width: 401px) and (max-width: 1024px) {
+
   .container {
-    width: 90%;
-    max-width: 768px;
+    max-width: 90%;
     margin: 0 auto;
+    padding: 10px;
   }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    align-items: center;
+    margin-top: 40px;
+    padding-left: 20px;
+    /* display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+    margin-top: 10px;
+    top: 6em;
+    left: 10px;
+    height: auto;
+    position: absolute; */
+  }
+
+  .nav-links button {
+    margin-top: 50px;
+  }
+
+  .nav-links button::after {
+    content: ''; /* Dodaj treść dla pseudoelementu */
+    display: block; /* Ustaw na blokowy, aby móc kontrolować jego rozmiar */
+    width: 40%; /* Ustaw szerokość na 60% przycisku */
+    height: 1px; /* Ustaw wysokość na 1 piksel, aby uzyskać efekt poziomej linii */
+    background-color: var(--primary); /* Wybierz kolor linii */
+    position: absolute; /* Ustaw pozycję absolutną względem przycisku */
+  bottom: calc(40%); /* Wyśrodkuj linię na 50 pikseli powyżej przycisku */
+  left: 0; /* Ustaw odległość od lewej krawędzi przycisku */
+  transform: translateX(80%); /* Wyśrodkuj linię w poziomie */
+  }
+
+  /* .nav-link-item {
+    display: block;
+  } */
+
+  .nav-menu {
+    /* visibility: hidden; */
+    display: none;
+  }
+
   .nav-menu-toggle {
+    visibility: visible;
     display: block;
   }
-  .nav-menu {
-    visibility: hidden;
-  }
-} */
+
+}
 
 /* Mobile */
-/* @media (max-width: 400px) {
+@media (max-width: 400px) {
+
   .container {
     width: 100%;
     max-width: 400px;
     margin: 0 auto;
   }
 
-  .nav-links {
+  .nav-links a {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     align-items: center;
-    gap: 30px;
+    gap: 40px;
     margin-top: 10px;
     position: absolute;
     top: 6em;
     left: 0;
     height: auto;
   }
+
   .nav-menu-toggle {
     display: block;
   }
 
   .nav-menu {
-    visibility: hidden;
+    /* visibility: hidden; */
+    display: none;
   }
-  .nav-menu-toggle {
-    display: block;
-  }
-} */
+
+  /* .nav-menu-toggle {
+    visibility: visible;
+  } */
+
+}
