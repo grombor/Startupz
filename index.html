@@ -8,13 +8,16 @@
   </head>
   <body>
     <div class="container">
-      <nav>
+      <header>
+      <nav role="navigation" aria-label="Navigation Menu">
         <img src="./src/images/logo.webp" alt="startupz-logo" />
         <div class="nav-menu" id="nav-menu">
           <div class="nav-links">
-            <a href="#">Startups</a>
-            <a href="#">Contact</a>
-            <button class="button-ghost">Work with us!</button>
+            <ul>
+              <li><a href="#">Startups</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><button class="button-ghost" aria-label="Work with us!">Work with us!</button></li>
+            </ul>
           </div>
         </div>
         <div class="nav-menu-toggle" id="nav-menu-toggle">
@@ -23,6 +26,7 @@
           <div class="bar"></div>
       </div>
       </nav>
+    </header>
     </div>
     <script src="./src/main.js"></script>
   </body>

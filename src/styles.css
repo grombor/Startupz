@@ -1,11 +1,19 @@
 /* Desktop-first */
 
-body, h1, h2, h3, p, ul, li {
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
   margin: 0;
   padding: 0;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -53,10 +61,6 @@ body, h1, h2, h3, p, ul, li {
   margin: 0 7.5em;
 }
 
-/* .active {
-  visibility: visible;
-} */
-
 nav {
   display: flex;
   align-items: center;
@@ -65,13 +69,11 @@ nav {
 }
 
 .nav-menu {
-  /* visibility: visible; */
   display: block;
   position: inherit;
 }
 
 .nav-menu {
-  /* visibility: visible; */
   position: inherit;
 }
 
@@ -105,7 +107,6 @@ nav {
 }
 
 .nav-links a {
-
   display: block;
   font-family: var(--font-medium);
   color: var(--primary);
@@ -151,7 +152,6 @@ nav {
 
 /* Tablet */
 @media (min-width: 401px) and (max-width: 1024px) {
-
   .container {
     max-width: 90%;
     margin: 0 auto;
@@ -166,39 +166,35 @@ nav {
     align-items: center;
     margin-top: 40px;
     padding-left: 20px;
-    /* display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    align-items: center;
-    gap: 40px;
-    margin-top: 10px;
-    top: 6em;
-    left: 10px;
-    height: auto;
-    position: absolute; */
   }
 
   .nav-links button {
-    margin-top: 50px;
+    margin-top: 40px;
+  }
+
+  .nav-links ul {
+    list-style:none;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links ul li {
+    padding-bottom: 40px;
   }
 
   .nav-links button::after {
-    content: ''; /* Dodaj treść dla pseudoelementu */
-    display: block; /* Ustaw na blokowy, aby móc kontrolować jego rozmiar */
-    width: 40%; /* Ustaw szerokość na 60% przycisku */
-    height: 1px; /* Ustaw wysokość na 1 piksel, aby uzyskać efekt poziomej linii */
-    background-color: var(--primary); /* Wybierz kolor linii */
-    position: absolute; /* Ustaw pozycję absolutną względem przycisku */
-  bottom: calc(40%); /* Wyśrodkuj linię na 50 pikseli powyżej przycisku */
-  left: 0; /* Ustaw odległość od lewej krawędzi przycisku */
-  transform: translateX(80%); /* Wyśrodkuj linię w poziomie */
+    content: '';
+    display: block;
+    width: 40%;
+    height: 1px;
+    background-color: var(--primary);
+    position: absolute;
+    bottom: calc(50%);
+    left: 0;
+    transform: translateX(80%);
   }
 
-  /* .nav-link-item {
-    display: block;
-  } */
-
   .nav-menu {
-    /* visibility: hidden; */
     display: none;
   }
 
@@ -206,12 +202,10 @@ nav {
     visibility: visible;
     display: block;
   }
-
 }
 
 /* Mobile */
 @media (max-width: 400px) {
-
   .container {
     width: 100%;
     max-width: 400px;
@@ -235,12 +229,6 @@ nav {
   }
 
   .nav-menu {
-    /* visibility: hidden; */
     display: none;
   }
-
-  /* .nav-menu-toggle {
-    visibility: visible;
-  } */
-
 }
