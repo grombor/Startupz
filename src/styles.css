@@ -292,6 +292,10 @@ section p {
     visibility: visible;
     display: block;
   }
+
+  #cta-image {
+    display: none;
+  }
 }
 
 /* Mobile */
@@ -345,5 +349,9 @@ section p {
   .nav-menu-toggle {
     visibility: visible;
     display: block;
+  }
+  
+  #cta-image {
+    display: none;
   }
 }
