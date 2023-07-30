@@ -617,7 +617,6 @@ background-size: contain;
 background-repeat: no-repeat;
 background-position: center;
 z-index: 2;
-border: 1px solid red;
 }
 
 .contact-form h2 {
@@ -706,46 +705,89 @@ border: 1px solid red;
   margin-top: 40px;
 }
 
-.footer a {
-  color: var(--complementary-green, #46b8c8);
-  font-family: Circular Std;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 30px; /* 166.667% */
-  text-decoration: none;
-}
-
 .footer {
   position: relative;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: start;
   width: 100%;
-  padding-bottom: 120px;
+  margin-top: 80px;
+  margin-bottom: 120px;
+  font-family: var(--font-medium)
+}
+
+.footer a {
+  color: var(--complementary-green, #46b8c8);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  text-decoration: none;
 }
 
 .footer-group {
   position: relative;
   display: grid;
-  grid-template-columns: 1fr;
-  align-items: center;
-  width: 100%;
+  grid-template-columns: auto;
+  align-content: start;
+  height: 162px;
 }
 
-.footer-grey {
-  color: #939393;
-  font-family: Circular Std;
+.footer-group:nth-child(1) {
+  /* margin-left: 80px;
+  margin-left: 40px; */
+  /* margin-top: 85px; */
+  align-content:space-between;
+  margin-top: -10px;
+}
+
+.footer-group:nth-child(1) .footer-grey {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 30px; /* 166.667% */
+  line-height: 30px;
   width: 156px;
-  /* margin-top: 85px; */
+  position: relative;
+  margin: 40px auto 0 auto;
+}
+
+.footer-group:nth-child(2) {
+  margin-left: 230px;
+}
+
+.footer-group:nth-child(3) {
+  margin-left: 155px;
+}
+
+.footer-group:nth-child(3) .footer-grey {
+  margin-left: 0;
+  margin-top: 0;
+  width: 328px;
+}
+
+.footer-group:nth-child(4) {
+  margin-left: 90px;
+  height: 163px;
+}
+
+.footer-group:nth-child(4) a{
+  align-content: space-evenly;
+  margin-top: 11px;
+  height: 23px;
+}
+
+
+.footer-grey {
+  color: #939393;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
 }
 
 .footer-logo {
-  width: 180px;
+  width: 179px;
+height: 43px;
 }
 
 /* Tablet */
