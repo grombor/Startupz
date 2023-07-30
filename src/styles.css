@@ -60,8 +60,8 @@ li {
 }
 
 .container {
-  width: 80%;
-  max-width: 1200px;
+  width: 85%;
+  max-width: 1440px;
   margin: 0 7.5em;
 }
 
@@ -169,6 +169,7 @@ section {
   padding-top: 140px;
   padding-bottom: 140px;
   min-width: calc(100% - 240px);
+  max-width: 1440px;
   margin-left: 120px;
   margin-right: 120px;
   overflow: hidden;
@@ -231,7 +232,7 @@ section p {
 #cta-image {
   position: absolute;
   top: 25%;
-  right: -7%;
+  right: -3%;
 }
 
 #cta-image img {
@@ -595,6 +596,10 @@ section p {
   background-image: url('./images/hiringframe5.png');
 }
 
+#contact-form-section {
+  padding-bottom: 70px;
+}
+
 .contact-form {
   background: var(--secondary-yellow, #ffc351);
 }
@@ -607,7 +612,6 @@ section p {
   display: block;
   width: 399.459px;
 height: 868.551px;
-/* transform: rotate(30.804deg); */
 background-image: url("./images/contact-form-background.png");
 background-size: contain;
 background-repeat: no-repeat;
