@@ -599,17 +599,21 @@ section p {
   background: var(--secondary-yellow, #ffc351);
 }
 
-.contact-form::before {
-  content: "sex";
+.contact-form-card::before {
+  content: "";
   position: absolute;
   right: 65px;
-  /* top: 217px; */
+  bottom: -270px;
   display: block;
   width: 399.459px;
 height: 868.551px;
-transform: rotate(30.804deg);
-background-image: url("./images/contact-formbackground.png");
+/* transform: rotate(30.804deg); */
+background-image: url("./images/contact-form-background.png");
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
 z-index: 2;
+border: 1px solid red;
 }
 
 .contact-form h2 {
