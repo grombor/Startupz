@@ -135,28 +135,43 @@ nav {
   border-radius: 32.5px;
   border: 1px solid var(--complementary-green, #46b8c8);
   color: #fff;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
+  font: 700 18px/1.5 sans-serif;
   letter-spacing: -0.18px;
   text-decoration: none;
   padding: 14px 20px;
   margin: 25px 0;
 }
 
+.button:hover {
+  color: var(--complementary-green, #46b8c8) !important;
+  background-color: transparent;
+}
+
+.button:active {
+  color: var(--complementary-green, #46b8c8) !important;
+  background-color: transparent;
+}
+
 .button-ghost {
   display: inline-block;
   background-color: transparent;
-  color: var(--complementary-green) !important;
   border-radius: 32.5px;
   border: 1px solid var(--complementary-green, #46b8c8);
-  color: var(--complementary-green, #46b8c8);
   text-align: center;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
+  font: 700 18px/1.5 sans-serif;
   text-decoration: none;
-  padding: 14px 34px;
+  padding: 16px 34px;
+  color: var(--complementary-green, #46b8c8) !important;
+}
+
+.button-ghost:hover {
+  color: #fff !important;
+  background-color: var(--complementary-green, #46b8c8);
+}
+
+.button-ghost:active {
+  color: #fff !important;
+  background-color: var(--complementary-green, #46b8c8);
 }
 
 section {
@@ -599,18 +614,18 @@ section p {
 }
 
 .contact-form-card::before {
-  content: "";
+  content: '';
   position: absolute;
   right: 65px;
   bottom: -270px;
   display: block;
   width: 399.459px;
-height: 868.551px;
-background-image: url("./images/contact-form-background.png");
-background-size: contain;
-background-repeat: no-repeat;
-background-position: center;
-z-index: 2;
+  height: 868.551px;
+  background-image: url('./images/contact-form-background.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 2;
 }
 
 .contact-form h2 {
@@ -707,7 +722,7 @@ z-index: 2;
   width: 100%;
   margin-top: 80px;
   margin-bottom: 120px;
-  font-family: var(--font-medium)
+  font-family: var(--font-medium);
 }
 
 .footer a {
@@ -731,7 +746,7 @@ z-index: 2;
   /* margin-left: 80px;
   margin-left: 40px; */
   /* margin-top: 85px; */
-  align-content:space-between;
+  align-content: space-between;
   margin-top: -10px;
 }
 
@@ -764,12 +779,11 @@ z-index: 2;
   height: 163px;
 }
 
-.footer-group:nth-child(4) a{
+.footer-group:nth-child(4) a {
   align-content: space-evenly;
   margin-top: 11px;
   height: 23px;
 }
-
 
 .footer-grey {
   color: #939393;
@@ -781,7 +795,7 @@ z-index: 2;
 
 .footer-logo {
   width: 179px;
-height: 43px;
+  height: 43px;
 }
 
 /* Tablet */
