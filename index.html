@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Startupz</title>
     <link rel="stylesheet" href="./src/styles.css" />
   </head>
   <body>
@@ -34,18 +34,15 @@
     </div>
 
     <div class="section">
-      <figure id="cta-image">
-        <img
-          src="./src/images/cta_background.png"
-          alt="background of top section"
-        />
+      <section class="cta">
+        <h1>We Create <br>Startups.</h1>
+        <p>We are startup studio that develops and launches new companies.</p>
+        <a href="#" class="button">See our works</a>
+      </section>
+      <figure id="cta-image" aria-hidden="true">
+        <img src="./src/images/cta_background.png" alt="" aria-hidden="true">
       </figure>
-    <section class="cta">
-      <h1>We Create <br />Startups.</h1>
-      <p>We are startup studio that develops and launches new companies.</p>
-      <a href="#" class="button">See our works</a>
-    </section>
-  </div>
+    </div>
 
     <div class="section">
       <section>
@@ -192,9 +189,9 @@
       <section>
         <h2 class="center" id="hiring-section">We are hiring!</h2>
         <p class="center">
-          We're always looking for talented people<br /> to joinand help build
-          our
-          startups. <br />Check out our current openings
+          We're always looking for talented people<br />
+          to joinand help build our startups. <br />Check out our current
+          openings
           <a class="button" id="hiring-button">See current openings</a>
         </p>
       </section>
@@ -202,21 +199,24 @@
 
     <div class="contact-form container">
       <section id="contact-form-section">
-          <h2>Are you ready<br /> to board this rocket ship?</h2>
-          <p>Share your excitement with us.</p>
-          <div class="contact-form-card">
-            <form>
-              <input type="text" placeholder="Name*" />
-              <input type="email" placeholder="Email*" />
-              <input
-                type="textarea"
-                placeholder="Message*"
-                name="message"
-                id="message"
-              />
-              <button>Shoot us a message</button>
-            </form>
-          </div>
+        <h2>
+          Are you ready<br />
+          to board this rocket ship?
+        </h2>
+        <p>Share your excitement with us.</p>
+        <div class="contact-form-card">
+          <form>
+            <input type="text" placeholder="Name*" />
+            <input type="email" placeholder="Email*" />
+            <input
+              type="textarea"
+              placeholder="Message*"
+              name="message"
+              id="message"
+            />
+            <button>Shoot us a message</button>
+          </form>
+        </div>
       </section>
     </div>
 
@@ -225,9 +225,13 @@
         <div class="footer-group">
           <a href="#">
             <figure>
-            <img class="footer-logo" src="./src/images/logo.webp" alt="startupz logo">
-          </figure>
-        </a>
+              <img
+                class="footer-logo"
+                src="./src/images/logo.webp"
+                alt="startupz logo"
+              />
+            </figure>
+          </a>
           <div class="footer-grey">© 2020 Startupz. All rights reserved.</div>
         </div>
 

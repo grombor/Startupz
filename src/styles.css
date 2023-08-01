@@ -130,20 +130,14 @@ nav {
 }
 
 .button {
-  display: block;
-  width: 185px;
-  height: 45px;
-  flex-shrink: 0;
+  display: inline-block;
   background-color: var(--complementary-green);
-  color: white;
   border-radius: 32.5px;
   border: 1px solid var(--complementary-green, #46b8c8);
-  color: var(--complementary-green, #46b8c8);
   color: #fff;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
-  line-height: 18px;
   letter-spacing: -0.18px;
   text-decoration: none;
   padding: 14px 20px;
@@ -151,7 +145,7 @@ nav {
 }
 
 .button-ghost {
-  flex-shrink: 0;
+  display: inline-block;
   background-color: transparent;
   color: var(--complementary-green) !important;
   border-radius: 32.5px;
