@@ -786,10 +786,15 @@ section p {
   line-height: 30px;
 }
 
+#footer-logo {
+  margin: auto;
+}
+
 .footer-logo {
   width: 179px;
   height: 43px;
   margin: auto;
+  text-align: center;
 }
 
 /* Tablet */
