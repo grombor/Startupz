@@ -727,6 +727,7 @@ section p {
 
 .footer a {
   color: var(--complementary-green, #46b8c8);
+  margin: auto;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
